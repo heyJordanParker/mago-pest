@@ -1,0 +1,14 @@
+version = "1"
+php-version = "8.3"
+
+[source]
+paths = ["tests/corpus/support", "tests/corpus/tests"]
+includes = ["vendor"]
+
+[analyzer]
+minimum-fail-level = "note"
+
+[extension-hosts.pest]
+command = ["php", "tests/corpus/worker.php"]
+working-directory = "../.."
+workers = 1

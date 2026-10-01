@@ -1,0 +1,42 @@
+{
+  "$schema": "https://getcomposer.org/schema.json",
+  "name": "heyjordanparker/mago-pest",
+  "description": "Mago analyzer support for Pest: $this in test closures, dynamic test properties, and expectation chains.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jordan Parker",
+      "email": "jordan@parkerlabs.co"
+    }
+  ],
+  "keywords": [
+    "mago",
+    "pest",
+    "static-analysis"
+  ],
+  "require": {
+    "php": "^8.3",
+    "carthage-software/mago": "^1.50"
+  },
+  "require-dev": {
+    "pestphp/pest": "^4.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "MagoPest\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Corpus\\": "tests/corpus/support/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": false
+    },
+    "optimize-autoloader": true,
+    "sort-packages": true
+  }
+}
