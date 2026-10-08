@@ -17,6 +17,7 @@
   ],
   "require": {
     "php": "^8.3",
+    "composer-runtime-api": "^2.0",
     "heyjordanparker/mago-sharp": "^0.1"
   },
   "require-dev": {
