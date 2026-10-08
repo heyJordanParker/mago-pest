@@ -17,7 +17,7 @@
   ],
   "require": {
     "php": "^8.3",
-    "carthage-software/mago": "^1.50"
+    "heyjordanparker/mago-sharp": "^0.1"
   },
   "require-dev": {
     "pestphp/pest": "^4.1"

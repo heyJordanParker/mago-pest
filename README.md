@@ -1,6 +1,6 @@
 # Mago Pest
 
-A [Mago](https://github.com/carthage-software/mago) analyzer extension that types [Pest](https://pestphp.com) test files the way Pest runs them.
+A [mago-sharp](https://github.com/heyJordanParker/mago-sharp) analyzer extension that types [Pest](https://pestphp.com) test files the way Pest runs them.
 
 Without it, Mago reads a Pest test file as plain PHP. It cannot see the test case class that `$this` refers to inside a test closure, so every call to a test case method or helper trait, and every property a `beforeEach` hook sets, is reported. Expectation chains are reported too, because Pest dispatches most of them through `__call` and `__get`.
 
@@ -16,8 +16,10 @@ With it, Mago analyzes:
 ## Install
 
 ```shell
-composer require --dev carthage-software/mago heyjordanparker/mago-pest
+composer require --dev heyjordanparker/mago-sharp:^0.1 heyjordanparker/mago-pest
 ```
+
+Keep the `^0.1` constraint. Packagist also lists the old 1.x versions of `heyjordanparker/mago-sharp`, and mago-pest runs only on 0.1.
 
 The project owns its worker entrypoint. Create `.mago/extensions.php`:
 
