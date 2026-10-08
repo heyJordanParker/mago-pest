@@ -83,7 +83,7 @@ composer install
 just check
 ```
 
-`just check` validates `composer.json`, then checks formatting, lints, analyzes the source, and runs the corpus. The corpus in `tests/corpus` runs the real worker over Pest test files and checks every inline `@mago-expect` annotation. A test in it that passes shows a capability, and an annotated line shows a defect the extension still reports.
+`just check` validates `composer.json`, then checks formatting, lints, analyzes the source, runs the corpus, and runs the unit tests in `tests/Unit`. The corpus in `tests/corpus` runs the real worker over Pest test files and checks every inline `@mago-expect` annotation. A test in it that passes shows a capability, and an annotated line shows a defect the extension still reports.
 
 ## License
 

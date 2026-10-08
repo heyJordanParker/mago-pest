@@ -30,10 +30,13 @@ final class PestExtension
             );
         }
 
+        $package = 'heyjordanparker/mago-pest';
+        $version = InstalledVersions::isInstalled($package) ? InstalledVersions::getPrettyVersion($package) : null;
+
         return new Extension(
-            identifier: 'heyjordanparker/mago-pest',
+            identifier: $package,
             name: 'Pest',
-            version: InstalledVersions::getPrettyVersion('heyjordanparker/mago-pest') ?? 'dev',
+            version: $version ?? 'dev',
             analyzerPlugins: [new PestPlugin($directory)],
         );
     }

@@ -20,4 +20,7 @@ format-check:
 test-corpus:
     {{mago}} --workspace . --config tests/corpus/mago.toml analyze --reporting-format count
 
-check: validate format-check lint analyze test-corpus
+test-unit:
+    vendor/bin/pest tests/Unit
+
+check: validate format-check lint analyze test-corpus test-unit
