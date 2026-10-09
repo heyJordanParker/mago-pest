@@ -18,7 +18,7 @@
   "require": {
     "php": "^8.3",
     "composer-runtime-api": "^2.0",
-    "heyjordanparker/mago-sharp": "^0.1"
+    "heyjordanparker/mago-sharp": "^0.2"
   },
   "require-dev": {
     "pestphp/pest": "^4.1"

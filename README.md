@@ -16,10 +16,10 @@ With it, Mago analyzes:
 ## Install
 
 ```shell
-composer require --dev heyjordanparker/mago-sharp:^0.1 heyjordanparker/mago-pest
+composer require --dev heyjordanparker/mago-sharp:^0.2 heyjordanparker/mago-pest
 ```
 
-Keep the `^0.1` constraint. Packagist also lists the old 1.x versions of `heyjordanparker/mago-sharp`, and mago-pest runs only on 0.1.
+Keep the `^0.2` constraint. Packagist also lists the old 1.x versions of `heyjordanparker/mago-sharp`, and mago-pest runs only on 0.2.
 
 The project owns its worker entrypoint. Create `.mago/extensions.php`:
 
